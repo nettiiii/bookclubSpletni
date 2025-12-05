@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>НАША ПОЛКА — Книжный клуб СПЛЕТНИ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-link">СПЛЕТНИ</a>
+        <div class="nav-group">
+            <a href="about.html" class="nav-item">О НАС</a>
+            <a href="shelf.html" class="nav-item">НАША ПОЛКА</a>
+        </div>
+    </header>
+
+    <h1 class="page-title">НАША ПОЛКА</h1>
+
+    <div class="books-grid">
+        <!-- 8 книг -->
+        <div class="book-card" onclick="showBookModal('Унесённые ветром', 'Маргарет Митчелл', 'исторический роман', '1037', '1936', '«Унесённые ветром» — эпическая история любви и выживания во времена Гражданской войны в США. Главная героиня — Скарлетт О’Хара — символ несгибаемой воли и страсти.', 'images/gone_with_the_wind.jpg')">
+            <img src="images/gone_with_the_wind.jpg" alt="Унесённые ветром" class="book-cover">
+            <div class="book-title">Унесённые ветром</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('1984', 'Джордж Оруэлл', 'антиутопия', '328', '1949', 'Роман-предупреждение о тоталитаризме, где государство контролирует мысли, слова и даже чувства граждан.', 'images/1984.jpg')">
+            <img src="images/1984.jpg" alt="1984" class="book-cover">
+            <div class="book-title">1984</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Гордость и предубеждение', 'Джейн Остин', 'роман', '432', '1813', 'История любви Элизабет Беннет и мистера Дарси — классика английской литературы, полная юмора и социальной сатиры.', 'images/pride_and_prejudice.jpg')">
+            <img src="images/pride_and_prejudice.jpg" alt="Гордость и предубеждение" class="book-cover">
+            <div class="book-title">Гордость и предубеждение</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Мастер и Маргарита', 'Михаил Булгаков', 'фантастика, сатира', '512', '1967', 'Философская фантасмагория, где Москва XX века встречается с Воландом и его свитой. История любви, веры и свободы.', 'images/master_and_margarita.jpg')">
+            <img src="images/master_and_margarita.jpg" alt="Мастер и Маргарита" class="book-cover">
+            <div class="book-title">Мастер и Маргарита</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Братья Карамазовы', 'Фёдор Достоевский', 'философский роман', '960', '1880', 'Глубокий психологический портрет семьи Карамазовых, вопросы веры, зла, свободы и ответственности.', 'images/brothers_karamazov.jpg')">
+            <img src="images/brothers_karamazov.jpg" alt="Братья Карамазовы" class="book-cover">
+            <div class="book-title">Братья Карамазовы</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Над пропастью во ржи', 'Джером Д. Сэлинджер', 'роман', '272', '1951', 'История подростка Холдена Колфилда, который пытается найти смысл в мире взрослых и сохранить свою неприкосновенность.', 'images/catcher_in_the_rye.jpg')">
+            <img src="images/catcher_in_the_rye.jpg" alt="Над пропастью во ржи" class="book-cover">
+            <div class="book-title">Над пропастью во ржи</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Преступление и наказание', 'Фёдор Достоевский', 'психологический роман', '672', '1866', 'История Родиона Раскольникова, студента, совершившего убийство и погружённого в муки совести, раскаяния и поиска искупления.', 'images/crime_and_punishment.jpg')">
+            <img src="images/crime_and_punishment.jpg" alt="Преступление и наказание" class="book-cover">
+            <div class="book-title">Преступление и наказание</div>
+        </div>
+        <div class="book-card" onclick="showBookModal('Анна Каренина', 'Лев Толстой', 'роман', '864', '1877', 'Трагедия любви Анны Карениной и её столкновение с общественными нормами. Параллельно — путь Ле́вина к смыслу жизни.', 'images/anna_karenina.jpg')">
+            <img src="images/anna_karenina.jpg" alt="Анна Каренина" class="book-cover">
+            <div class="book-title">Анна Каренина</div>
+        </div>
+    </div>
+
+    <div id="bookModal" class="modal">
+        <button class="close-btn" onclick="closeBookModal()">×</button>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="Обложка">
+            <div class="modal-text">
+                <h2 id="modalTitle" class="modal-title">Заголовок</h2>
+                <p id="modalInfo" class="modal-info">Автор: —<br>Жанр: —<br>Страниц: —<br>Год: —</p>
+                <p id="modalDescription" class="modal-description">Описание...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
