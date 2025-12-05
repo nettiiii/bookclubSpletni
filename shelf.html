@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>НАША ПОЛКА — Книжный клуб СПЛЕТНИ</title>
+    <!-- SEO оптимизация -->
+    <title>Наша книжная полка — СПЛЕТНИ | Рекомендации, рецензии, обзоры литературы</title>
+    <meta name="description" content="Книжная полка клуба СПЛЕТНИ: Унесённые ветром, 1984, Гордость и предубеждение, Мастер и Маргарита и другие классические произведения. Читайте рецензии, выбирайте следующую книгу.">
+    <!-- Конец SEO -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,40 +19,40 @@
         </div>
     </header>
 
-    <h1 class="page-title">НАША ПОЛКА</h1>
+    <h1 class="page-title">НАША КНИЖНАЯ ПОЛКА</h1>
 
     <div class="books-grid">
-        <!-- 8 книг -->
+        <!-- 8 книг с обновленными alt -->
         <div class="book-card" onclick="showBookModal('Унесённые ветром', 'Маргарет Митчелл', 'исторический роман', '1037', '1936', '«Унесённые ветром» — эпическая история любви и выживания во времена Гражданской войны в США. Главная героиня — Скарлетт О’Хара — символ несгибаемой воли и страсти.', 'images/gone_with_the_wind.jpg')">
-            <img src="images/gone_with_the_wind.jpg" alt="Унесённые ветром" class="book-cover">
+            <img src="images/gone_with_the_wind.jpg" alt="Обложка книги 'Унесённые ветром' Маргарет Митчелл - классический исторический роман" class="book-cover">
             <div class="book-title">Унесённые ветром</div>
         </div>
         <div class="book-card" onclick="showBookModal('1984', 'Джордж Оруэлл', 'антиутопия', '328', '1949', 'Роман-предупреждение о тоталитаризме, где государство контролирует мысли, слова и даже чувства граждан.', 'images/1984.jpg')">
-            <img src="images/1984.jpg" alt="1984" class="book-cover">
+            <img src="images/1984.jpg" alt="Обложка антиутопии '1984' Джорджа Оруэлла - книга о тоталитарном обществе" class="book-cover">
             <div class="book-title">1984</div>
         </div>
         <div class="book-card" onclick="showBookModal('Гордость и предубеждение', 'Джейн Остин', 'роман', '432', '1813', 'История любви Элизабет Беннет и мистера Дарси — классика английской литературы, полная юмора и социальной сатиры.', 'images/pride_and_prejudice.jpg')">
-            <img src="images/pride_and_prejudice.jpg" alt="Гордость и предубеждение" class="book-cover">
+            <img src="images/pride_and_prejudice.jpg" alt="Классический роман 'Гордость и предубеждение' Джейн Остин - история любви Элизабет Беннет" class="book-cover">
             <div class="book-title">Гордость и предубеждение</div>
         </div>
         <div class="book-card" onclick="showBookModal('Мастер и Маргарита', 'Михаил Булгаков', 'фантастика, сатира', '512', '1967', 'Философская фантасмагория, где Москва XX века встречается с Воландом и его свитой. История любви, веры и свободы.', 'images/master_and_margarita.jpg')">
-            <img src="images/master_and_margarita.jpg" alt="Мастер и Маргарита" class="book-cover">
+            <img src="images/master_and_margarita.jpg" alt="Книга 'Мастер и Маргарита' Михаила Булгакова - мистическая сатира о Москве" class="book-cover">
             <div class="book-title">Мастер и Маргарита</div>
         </div>
         <div class="book-card" onclick="showBookModal('Братья Карамазовы', 'Фёдор Достоевский', 'философский роман', '960', '1880', 'Глубокий психологический портрет семьи Карамазовых, вопросы веры, зла, свободы и ответственности.', 'images/brothers_karamazov.jpg')">
-            <img src="images/brothers_karamazov.jpg" alt="Братья Карамазовы" class="book-cover">
+            <img src="images/brothers_karamazov.jpg" alt="Роман 'Братья Карамазовы' Фёдора Достоевского - философское произведение о вере и семье" class="book-cover">
             <div class="book-title">Братья Карамазовы</div>
         </div>
         <div class="book-card" onclick="showBookModal('Над пропастью во ржи', 'Джером Д. Сэлинджер', 'роман', '272', '1951', 'История подростка Холдена Колфилда, который пытается найти смысл в мире взрослых и сохранить свою неприкосновенность.', 'images/catcher_in_the_rye.jpg')">
-            <img src="images/catcher_in_the_rye.jpg" alt="Над пропастью во ржи" class="book-cover">
+            <img src="images/catcher_in_the_rye.jpg" alt="Книга 'Над пропастью во ржи' Джерома Сэлинджера - роман о подростковом бунте" class="book-cover">
             <div class="book-title">Над пропастью во ржи</div>
         </div>
         <div class="book-card" onclick="showBookModal('Преступление и наказание', 'Фёдор Достоевский', 'психологический роман', '672', '1866', 'История Родиона Раскольникова, студента, совершившего убийство и погружённого в муки совести, раскаяния и поиска искупления.', 'images/crime_and_punishment.jpg')">
-            <img src="images/crime_and_punishment.jpg" alt="Преступление и наказание" class="book-cover">
+            <img src="images/crime_and_punishment.jpg" alt="Классика 'Преступление и наказание' Достоевского - психологический роман о морали" class="book-cover">
             <div class="book-title">Преступление и наказание</div>
         </div>
         <div class="book-card" onclick="showBookModal('Анна Каренина', 'Лев Толстой', 'роман', '864', '1877', 'Трагедия любви Анны Карениной и её столкновение с общественными нормами. Параллельно — путь Ле́вина к смыслу жизни.', 'images/anna_karenina.jpg')">
-            <img src="images/anna_karenina.jpg" alt="Анна Каренина" class="book-cover">
+            <img src="images/anna_karenina.jpg" alt="Роман 'Анна Каренина' Льва Толстого - история любви и общества в царской России" class="book-cover">
             <div class="book-title">Анна Каренина</div>
         </div>
     </div>
@@ -57,7 +60,7 @@
     <div id="bookModal" class="modal">
         <button class="close-btn" onclick="closeBookModal()">×</button>
         <div class="modal-content">
-            <img id="modalImage" class="modal-image" src="" alt="Обложка">
+            <img id="modalImage" class="modal-image" src="" alt="Увеличенная обложка выбранной книги книжного клуба СПЛЕТНИ">
             <div class="modal-text">
                 <h2 id="modalTitle" class="modal-title">Заголовок</h2>
                 <p id="modalInfo" class="modal-info">Автор: —<br>Жанр: —<br>Страниц: —<br>Год: —</p>
