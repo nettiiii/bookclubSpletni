@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Запрещаем сканирование служебных папок
+Disallow: /admin/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Директива Sitemap (замените на свой реальный URL)
+Sitemap: https://nettiiii.github.io/bookclubSpletni/sitemap.xml
